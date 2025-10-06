@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nelly's Personal Marketing Site</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f8fb;
+            color: #222;
+        }
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #023e8a;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 30px;
+        }
+        h2 {
+            color: #0077b6;
+        }
+        .services, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service, .portfolio-item {
+            flex: 1 1 250px;
+            background: #f1f8ff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        .cta {
+            display: inline-block;
+            background: #00b4d8;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 20px 0;
+            transition: background 0.2s;
+        }
+        .cta:hover {
+            background: #0077b6;
+        }
+        footer {
+            background: #023e8a;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0 10px 0;
+            margin-top: 40px;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.3em;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #90e0ef;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #bcdff1;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background: #0077b6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        input[type="submit"]:hover {
+            background: #00b4d8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nelly Resian</h1>
+        <p>Welcome to my personal marketing site!</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/140x140.png?text=Profile+Photo" alt="Profile Picture" style="display:block;margin:20px auto 16px auto;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.08);width:140px;height:140px;object-fit:cover;">
+            <p>Hello! I'm Nelly, a passionate professional based in Kenya. I specialize in digital marketing, content creation, and helping brands grow their online presence. My goal is to connect people and ideas through creative solutions.</p>
+        </section>
+        <section id="services">
+            <h2>What I Offer</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Digital Marketing</h3>
+                    <p>Grow your business with tailored digital marketing strategies, SEO, and social media management.</p>
+                </div>
+                <div class="service">
+                    <h3>Content Creation</h3>
+                    <p>Engaging blog posts, articles, and multimedia content to boost your brand's visibility.</p>
+                </div>
+                <div class="service">
+                    <h3>Brand Consulting</h3>
+                    <p>Personalized advice to help you build a strong, memorable brand identity.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1633345778967-3760204a4c57?auto=format&fit=crop&w=800&q=80" alt="Mombasa Beach, Kenya">
+                    <p>Social Media Campaign for Mombasa Beach Resort</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1533760881669-80db4d7b4c15?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nairobi, Kenya">
+                    <p>Branding Project for Nairobi Startup</p>
+                </div>
+            </div>
+        </section>
+        <a href="#contact" class="cta">Contact Me</a>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com/" target="_blank" title="Twitter">&#x1F426;</a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn">&#x1F4BB;</a>
+            <a href="https://facebook.com/" target="_blank" title="Facebook">&#x1F4F1;</a>
+        </div>
+        <p>&copy; 2025 Nelly Resian. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
